@@ -1,0 +1,339 @@
+.detail-page {
+  background-color: var(--putih);
+  padding-bottom: 5rem;
+}
+
+/* ================= SECTION 1: HERO & INFO BOX ================= */
+.detail-header-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image-box {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 480px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-title {
+  color: var(--biru);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-location {
+  color: var(--putih);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--putih);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.star-icon {
+  color: #facc15;
+  font-size: 1.2rem;
+}
+
+.btn-rute {
+  background-color: var(--hijau);
+  color: var(--putih);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rute:hover {
+  background-color: #0c3b2d;
+}
+
+.info-box {
+  background-color: var(--putih);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.info-icon {
+  color: var(--biru);
+}
+
+.info-text h3 {
+  color: var(--biru);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.info-text p {
+  color: var(--krem);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.btn-action {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--krem);
+  border: 1.5px solid var(--krem);
+  padding: 0.8rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+  background-color: var(--krem);
+  color: var(--putih);
+}
+
+/* ================= SECTION 2: GALERI ================= */
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid rgba(134, 137, 136, 0.2);
+  margin: 3rem 0;
+}
+
+/* ================= SECTION 3: DESKRIPSI & LOKASI (SPLIT) ================= */
+.content-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.section-heading {
+  color: var(--hijau);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.deskripsi-teks {
+  color: var(--biru);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.map-preview {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= SECTION 4: DESTINASI SERUPA ================= */
+.section-heading-center {
+  color: var(--hijau);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.similar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.similar-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.similar-img:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= STICKY INFO BOX (DESKTOP) ================= */
+@media screen and (min-width: 1025px) {
+  .detail-header-grid {
+    align-items: flex-start;
+  }
+
+  .info-box {
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+    transition: transform 0.3s ease;
+  }
+}
+
+/* ================= REKALIBRASI RESPONSIVENESS (TABLET & MOBILE) ================= */
+
+@media screen and (max-width: 1024px) {
+  .detail-header-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-image-box {
+    min-height: 350px;
+  }
+
+  .info-box {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .info-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .action-buttons {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image-box {
+    min-height: 280px;
+  }
+
+  .detail-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .modal-box {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-image-box {
+    min-height: 225px;
+    border-radius: 12px;
+  }
+
+  .detail-page {
+    padding-bottom: 3.5rem;
+  }
+
+  .info-box {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .detail-gallery {
+    gap: 0.6rem;
+  }
+
+  .similar-img {
+    border-radius: 10px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+}

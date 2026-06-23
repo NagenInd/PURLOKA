@@ -1,0 +1,114 @@
+.about-page {
+  position: relative;
+  padding: 3rem 0 5rem 0;
+  background-color: var(--putih);
+  overflow: hidden;
+}
+
+.bg-vector {
+  position: absolute;
+  top: 50px;
+  right: -5%;
+  width: 60%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.mountain-direct-png {
+  width: calc(100% + 3.5rem);
+  margin-left: -3.5rem;
+  height: auto;
+  display: block;
+  margin-bottom: 2.5rem;
+
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+.relative-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Judul Halaman Utama --- */
+.page-title {
+  color: var(--hijau);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  color: var(--hijau);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-section p {
+  color: var(--biru);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+/* --- Daftar Angka (Ordered List) --- */
+.activity-list {
+  color: var(--biru);
+  font-size: 1rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  padding-left: 1.2rem;
+}
+
+.activity-list li {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* --- RESPONSIVENESS (MOBILE & TABLET) --- */
+@media screen and (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .bg-vector {
+    width: 150%;
+    opacity: 0.3;
+  }
+
+  .mountain-direct-png {
+    width: 100%;
+    margin-left: 0;
+  }
+}
